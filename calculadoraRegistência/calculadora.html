@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+    <title>CALCULADORA DE RESISTORES</title>
+    <style type="text/css">
+        img {
+        max-width: 100%;
+        max-height: 100%;
+        }
+         .tabela{
+        width: 400px;
+        height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset class="field">
+            <legend>Faixas do Resistor</legend>
+            <label for="PriFaixa">1° Faixa:</label>
+              <select name="pri" id="PriFaixa">
+                <option value="0">Preta</option>
+                <option value="1">Marrom</option>
+                <option value="2">Vermelha</option>
+                <option value="3">Laranja</option>
+                <option value="4">Amarela</option>
+                <option value="5">Verde</option>
+                <option value="6">Azul</option>
+                <option value="7">Violeta</option>
+                <option value="8">Cinza</option>
+                <option value="9">Branca</option>
+              </select>
+              <label for="TerFaixa">3° Faixa:</label>
+              <select name="ter" id="TerFaixa">
+                <option value="0">Preta</option>
+                <option value="1">Marrom</option>
+                <option value="2">Vermelha</option>
+                <option value="3">Laranja</option>
+                <option value="4">Amarela</option>
+                <option value="5">Verde</option>
+                <option value="6">Azul</option>
+                <option value="7">Violeta</option>
+                <option value="8">Cinza</option>
+                <option value="9">Branca</option>
+              </select>
+                <label for="QuiFaixa">5° Faixa:</label>
+              <select name="qui" id="QuiFaixa">
+                <option value="0.01">Marrom</option>
+                <option value="0.02">Vermelha</option>
+                <option value="0.005">Verde</option>
+                <option value="0.0025">Azul</option>
+                <option value="0.001">Violeta</option>
+                <option value="0.0005">Cinza</option>
+                <option value="0.05">Dourada</option>
+                <option value="0.1">Prateada</option>
+              </select>
+              <br>
+              <label for="SegFaixa">2° Faixa:</label>
+              <select name="seg" id="SegFaixa">
+                <option value="0">Preta</option>
+                <option value="1">Marrom</option>
+                <option value="2">Vermelha</option>
+                <option value="3">Laranja</option>
+                <option value="4">Amarela</option>
+                <option value="5">Verde</option>
+                <option value="6">Azul</option>
+                <option value="7">Violeta</option>
+                <option value="8">Cinza</option>
+                <option value="9">Branca</option>
+              </select>
+              <label for="QuaFaixa">4° Faixa:</label>
+              <select name="qua" id="QuaFaixa">
+                <option value="1">Preta</option>
+                <option value="10">Marrom</option>
+                <option value="100">Vermelha</option>
+                <option value="1000">Laranja</option>
+                <option value="10000">Amarela</option>
+                <option value="100000">Verde</option>
+                <option value="1000000">Azul</option>
+                <option value="10000000">Violeta</option>
+                <option value="0.1">Dourada</option>
+                <option value="0.01">Prateada</option>
+              </select>
+        </fieldset>
+        <fieldset>
+        <legend>Resultado</legend>
+        <div id="result"></div>
+        </fieldset>
+        <p><button type="button" onclick="pegarDados()">Calcular Valor</button></p>
+        <div class="tabela">
+        <img src="https://meetarduino.files.wordpress.com/2012/03/tabela-de-cores.jpg">
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
